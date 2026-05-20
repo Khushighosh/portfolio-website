@@ -1,50 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #fdf2f8);
+  color: #1f2937;
+  line-height: 1.6;
 }
 
 header {
-    background: #333;
-    color: white;
-    padding: 15px;
-    text-align: center;
+  background: linear-gradient(135deg, #0f172a, #2563eb, #7c3aed);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+header h1 {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 20px;
+  margin-bottom: 25px;
 }
 
 nav a {
-    color: white;
-    margin: 10px;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 20px;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.2);
 }
 
 section {
-    padding: 40px;
-    text-align: center;
+  max-width: 950px;
+  margin: 40px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.10);
 }
 
-.card {
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin: 20px;
+section h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #111827;
+  font-size: 30px;
 }
 
-form input, form textarea {
-    display: block;
-    width: 80%;
-    margin: 10px auto;
-    padding: 10px;
+section p {
+  font-size: 17px;
+  text-align: center;
 }
 
-button {
-    padding: 10px 20px;
-    background: black;
-    color: white;
-    border: none;
-    cursor: pointer;
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.skills span {
+  background: linear-gradient(135deg, #dbeafe, #ede9fe);
+  color: #1d4ed8;
+  padding: 10px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+}
+
+.project-card {
+  background: linear-gradient(135deg, #f8fafc, #eef2ff);
+  padding: 22px;
+  margin: 18px 0;
+  border-left: 6px solid #7c3aed;
+  border-radius: 14px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.project-card h3 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.tech {
+  color: #6d28d9;
+  font-size: 15px;
+}
+
+#contact a {
+  color: #2563eb;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #7c3aed;
+  text-decoration: underline;
+}
+
+footer {
+  background: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 18px;
+  margin-top: 40px;
 }
 
 @media (max-width: 600px) {
-    body {
-        font-size: 14px;
-    }
+  header h1 {
+    font-size: 32px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+
+  section {
+    margin: 20px;
+    padding: 22px;
+  }
 }
