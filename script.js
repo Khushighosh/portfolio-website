@@ -1,6 +1,14 @@
-console.log("Portfolio website loaded");
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault();
 
-// Simple alert on form submit
-document.querySelector("form").addEventListener("submit", function () {
-    alert("Message sent successfully!");
+    const section = document.querySelector(this.getAttribute('href'));
+    if (section) {
+      section.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
 });
+
+console.log("Welcome to Khushi Ghosh's Portfolio Website!");
