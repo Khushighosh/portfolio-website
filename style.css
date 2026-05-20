@@ -107,6 +107,15 @@ section p {
   color: #6d28d9;
   font-size: 15px;
 }
+#blog {
+  display: block;
+  background: linear-gradient(135deg, #fff7ed, #fce7f3);
+  border: 3px solid #ec4899;
+}
+
+#blog h2 {
+  color: #be185d;
+}
 
 #contact a {
   color: #2563eb;
