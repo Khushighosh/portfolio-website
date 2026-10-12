@@ -2,13 +2,12 @@ document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', function (e) {
     e.preventDefault();
 
-    const section = document.querySelector(this.getAttribute('href'));
+    const targetId = this.getAttribute('href');
+    const section = document.querySelector(targetId);
+
     if (section) {
-      section.scrollIntoView({
-        behavior: 'smooth'
-      });
+      section.scrollIntoView({ behavior: 'smooth' });
+      history.pushState(null, '', targetId);
     }
   });
 });
-
-console.log("Welcome to Khushi Ghosh's Portfolio Website!");
