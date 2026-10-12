@@ -1,31 +1,24 @@
-# Khushi Ghosh Portfolio Website
+# Khushi Ghosh | Portfolio Website
 
-A modern and responsive personal portfolio website built using HTML, CSS, and JavaScript. This portfolio showcases my technical skills, projects, learning journey, and professional profiles in a clean and user-friendly interface.
+A modern, responsive personal portfolio built with HTML, CSS, and JavaScript. It showcases my full-stack and backend projects, technical skills, and professional profiles in a clean, easy-to-navigate interface.
 
-##  Features
+## Features
 
-* Responsive design for desktop and mobile devices
-* Smooth scrolling navigation using JavaScript
-* Modern gradient-based user interface
-* About Me section
-* Technical Skills showcase
-* Project Portfolio section
-* Blog & Learning section
-* Contact section with professional links
-* Interactive project cards with hover effects
-* Mobile-friendly layout using CSS media queries
+- Responsive design for desktop and mobile
+- Smooth scrolling navigation using JavaScript
+- Modern gradient-based UI
+- About, Skills, Projects, Blog & Learning, and Contact sections
+- Interactive project cards with hover effects
+- Mobile-friendly layout using CSS media queries
 
 ## Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript
-* Git
-* GitHub
+- HTML5, CSS3, JavaScript
+- Git & GitHub
 
 ## Project Structure
 
-```text
+```
 portfolio-website/
 │
 ├── index.html
@@ -38,89 +31,73 @@ portfolio-website/
 
 ### CSS Features
 
-* Gradient backgrounds
-* Flexbox-based skills layout
-* Responsive design using media queries
-* Hover animations and transitions
-* Card-based project presentation
-* Modern color palette with shadows and rounded corners
+- Gradient backgrounds
+- Flexbox-based skills layout
+- Responsive design using media queries
+- Hover animations and transitions
+- Card-based project presentation
+- Modern color palette with shadows and rounded corners
 
 ### JavaScript Features
 
-* Smooth scrolling navigation between sections
-* Event listeners for navigation links
-* Improved user experience with seamless page transitions
+- Smooth scrolling navigation between sections
+- Event listeners for navigation links
+- Seamless transitions between sections
 
 ## Website Sections
 
 ### About Me
-
-An introduction to my background, interests, and career goals in software development, AI, and IoT.
+A short introduction to my background and my interest in building full-stack and AI-powered applications.
 
 ### Technical Skills
 
-* Python
-* C++
-* JavaScript
-* SQL
-* React.js
-* Firebase
-* Git & GitHub
-* Data Structures & Algorithms
-* REST APIs
-* IoT
-* Machine Learning Basics
+- **Languages:** JavaScript, TypeScript, Java, Python, C++, SQL
+- **Backend:** Node.js, Express, REST APIs, JWT Authentication
+- **Frontend:** React.js, HTML, CSS
+- **Databases:** PostgreSQL, MongoDB
+- **Tools:** Git & GitHub, Postman
+- **Core:** Data Structures & Algorithms
+- **AI:** LLM integrations, local models with Ollama
 
 ### Projects
 
-* AI-Powered Resume Analyzer
-* Employee Leave & Attendance Management System
-* Personal Portfolio Website
-* IoT-Based Intelligent Monitoring System
+| Project | Description | Tech |
+|---|---|---|
+| [Study Buddy](https://github.com/Khushighosh/study-buddy) | Exam-prep assistant that answers questions and generates quizzes from a student's own notes, running fully locally | Ollama, local embeddings, Chroma, SQLite |
+| [Mini ERP + CRM Operations Portal](https://github.com/Khushighosh/mini-erp-crm) | Customers, inventory and sales challans with role-based authentication | Node.js, TypeScript, Express, PostgreSQL, React |
+| [GEN-AI Backend](https://github.com/Khushighosh/Gen-AI-project) | Backend with JWT auth, register/login/logout flow and token blacklisting | Node.js, Express, MongoDB |
+| Employee Leave & Attendance System | REST API for managing employee leave and attendance | Java, Spring Boot |
+| Personal Portfolio Website | This site | HTML, CSS, JavaScript |
 
 ### Blog & Learning
-
-Sharing my learning experiences in:
-
-* Web Development
-* Artificial Intelligence
-* Internet of Things (IoT)
+Notes on what I'm learning in web development, backend engineering, and AI.
 
 ### Contact
-
-* Email
-* GitHub
-* LinkedIn
-* LeetCode
+Email, GitHub, LinkedIn, LeetCode
 
 ## Getting Started
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/Khushighosh/portfolio-website.git
+```
+   git clone https://github.com/Khushighosh/portfolio-website.git
 ```
 
 2. Navigate to the project folder.
-
-3. Open `index.html` in your preferred web browser.
+3. Open `index.html` in your browser.
 
 ## Future Enhancements
 
-* Dark mode support
-* Downloadable resume
-* Contact form with backend integration
-* Project filtering and search
-* Additional animations and effects
-* Expanded blog section
+- Dark mode support
+- Downloadable resume
+- Contact form with backend integration
+- Project filtering and search
+- Expanded blog section
 
 ## Author
 
 **Khushi Ghosh**
+Software Developer | Full Stack & Backend
 
-Engineering Student | Software Developer
-
-GitHub: https://github.com/Khushighosh
-
-LinkedIn: https://www.linkedin.com/in/khushi-ghosh-39b957294/
-
+- GitHub: https://github.com/Khushighosh
+- LinkedIn: https://www.linkedin.com/in/khushi-ghosh-39b957294/
