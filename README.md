@@ -1,103 +1,97 @@
-# Khushi Ghosh | Portfolio Website
+# Khushi Ghosh | Portfolio
 
-A modern, responsive personal portfolio built with HTML, CSS, and JavaScript. It showcases my full-stack and backend projects, technical skills, and professional profiles in a clean, easy-to-navigate interface.
+Personal portfolio of a final-year EEE student who builds full-stack, backend and local-AI projects. Plain HTML, CSS and JavaScript, no frameworks, no build step.
 
-## Features
+## Highlights
 
-- Responsive design for desktop and mobile
-- Smooth scrolling navigation using JavaScript
-- Modern gradient-based UI
-- About, Skills, Projects, Blog & Learning, and Contact sections
-- Interactive project cards with hover effects
-- Mobile-friendly layout using CSS media queries
+- Fully responsive layout for desktop, tablet and mobile
+- Smooth-scrolling single-page navigation
+- Gradient-based UI with card-style project showcase and hover effects
+- Sections: About, Skills, Projects, Blog & Learning, Contact
 
-## Technologies Used
+## Tech Stack
 
-- HTML5, CSS3, JavaScript
-- Git & GitHub
+| Area | Tools |
+|---|---|
+| Site | HTML5, CSS3, vanilla JavaScript |
+| Hosting & versioning | Git, GitHub |
 
 ## Project Structure
 
 ```
 portfolio-website/
-│
-├── index.html
-├── style.css
-├── script.js
+├── index.html    # page markup and sections
+├── style.css     # styling, layout, responsive rules
+├── script.js     # smooth scrolling and navigation behaviour
 └── README.md
 ```
 
-## Design Highlights
+## Design & Implementation
 
-### CSS Features
-
-- Gradient backgrounds
+**CSS**
+- Gradient backgrounds and a consistent colour palette with shadows and rounded corners
 - Flexbox-based skills layout
-- Responsive design using media queries
-- Hover animations and transitions
-- Card-based project presentation
-- Modern color palette with shadows and rounded corners
+- Media queries for mobile-friendly breakpoints
+- Hover animations and transitions on cards and links
 
-### JavaScript Features
+**JavaScript**
+- Event listeners on navigation links for smooth scrolling between sections
+- Seamless section-to-section transitions
 
-- Smooth scrolling navigation between sections
-- Event listeners for navigation links
-- Seamless transitions between sections
+## What's on the Site
 
-## Website Sections
+### About
+Who I am: a B.E. student in Electrical and Electronics Engineering (2023–2027) who builds software alongside coursework, with a focus on full-stack development, backend systems and AI that runs locally.
 
-### About Me
-A short introduction to my background and my interest in building full-stack and AI-powered applications.
-
-### Technical Skills
+### Skills
 
 - **Languages:** JavaScript, TypeScript, Java, Python, C++, SQL
-- **Backend:** Node.js, Express, REST APIs, JWT Authentication
+- **Backend:** Node.js, Express, REST APIs, JWT authentication
 - **Frontend:** React.js, HTML, CSS
 - **Databases:** PostgreSQL, MongoDB
+- **AI:** LLM integrations, local open-weight models with Ollama, embeddings and vector search (Chroma)
 - **Tools:** Git & GitHub, Postman
 - **Core:** Data Structures & Algorithms
-- **AI:** LLM integrations, local models with Ollama
 
 ### Projects
 
-| Project | Description | Tech |
+| Project | What it does | Tech |
 |---|---|---|
-| [Study Buddy](https://github.com/Khushighosh/study-buddy) | Exam-prep assistant that answers questions and generates quizzes from a student's own notes, running fully locally | Ollama, local embeddings, Chroma, SQLite |
+| [Order Ledger](https://github.com/Khushighosh/Order-Ledger) | Turns messy WhatsApp order chats (English, Hinglish, Kanglish) into structured orders, delivery schedules and pending payments for small sellers, using a local model | Python, Ollama (qwen2.5, llama3.2), web app |
+| [Same Spot](https://github.com/Khushighosh/same-spot) | Compares photos of the same place taken on different evenings using a local vision model and produces field notes | Python, Ollama (gemma3) |
+| [Study Buddy](https://github.com/Khushighosh/study-buddy) | Exam-prep assistant that answers questions and generates quizzes from a student's own notes, fully offline | Ollama, local embeddings, Chroma, SQLite |
 | [Mini ERP + CRM Operations Portal](https://github.com/Khushighosh/mini-erp-crm) | Customers, inventory and sales challans with role-based authentication | Node.js, TypeScript, Express, PostgreSQL, React |
-| [GEN-AI Backend](https://github.com/Khushighosh/Gen-AI-project) | Backend with JWT auth, register/login/logout flow and token blacklisting | Node.js, Express, MongoDB |
-| Employee Leave & Attendance System | REST API for managing employee leave and attendance | Java, Spring Boot |
-| Personal Portfolio Website | This site | HTML, CSS, JavaScript |
+| [GEN-AI Backend](https://github.com/Khushighosh/Gen-AI-project) | Auth backend with register/login/logout flow, JWT and token blacklisting | Node.js, Express, MongoDB |
+| Bi-Directional Smart Communication System | Final-year major project: a sensor glove (5 flex sensors + IMU) that helps deaf and non-speaking hospital patients communicate, with ML-based sign recognition and an ISL avatar (in progress) | ESP32, MPU6050, Raspberry Pi 5, ML |
+| Personal Portfolio | This site | HTML, CSS, JavaScript |
 
 ### Blog & Learning
-Notes on what I'm learning in web development, backend engineering, and AI.
+Notes on what I'm learning in web development, backend engineering and local AI.
 
 ### Contact
-Email, GitHub, LinkedIn, LeetCode
+Email, GitHub, LinkedIn and LeetCode links.
 
-## Getting Started
+## Run Locally
 
-1. Clone the repository:
-
+```bash
+git clone https://github.com/Khushighosh/portfolio-website.git
+cd portfolio-website
 ```
-   git clone https://github.com/Khushighosh/portfolio-website.git
-```
 
-2. Navigate to the project folder.
-3. Open `index.html` in your browser.
+Then open `index.html` in your browser. No installation required.
 
-## Future Enhancements
+## Roadmap
 
-- Dark mode support
-- Downloadable resume
-- Contact form with backend integration
-- Project filtering and search
-- Expanded blog section
+- [ ] Dark mode
+- [ ] Downloadable resume
+- [ ] Contact form with backend integration
+- [ ] Project filtering and search
+- [ ] Expanded blog section
 
 ## Author
 
 **Khushi Ghosh**
-Software Developer | Full Stack & Backend
+Full Stack & Backend Developer | B.E. EEE, Dayananda Sagar College of Engineering (2023–2027)
 
-- GitHub: https://github.com/Khushighosh
-- LinkedIn: https://www.linkedin.com/in/khushi-ghosh-39b957294/
+- GitHub: [github.com/Khushighosh](https://github.com/Khushighosh)
+- LinkedIn: [linkedin.com/in/khushi-ghosh-39b957294](https://www.linkedin.com/in/khushi-ghosh-39b957294/)
