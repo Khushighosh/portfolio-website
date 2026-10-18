@@ -1,145 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khushi Ghosh | Portfolio</title>
+  <meta name="description" content="Full-stack and backend developer building AI-powered apps.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <script>try{var t=localStorage.getItem('theme')||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');document.documentElement.dataset.theme=t}catch(e){}</script>
 </head>
 <body>
 
-<header>
-  <h1>Khushi Ghosh</h1>
-  <p>Software Developer | Full Stack & Backend</p>
-  <nav>
+<nav class="topbar">
+  <a class="logo" href="#home">KG</a>
+  <div class="links">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
-    <a href="#blog">Blog</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#blog">Learning</a>
     <a href="#contact">Contact</a>
-  </nav>
+  </div>
+  <button id="themeToggle" class="theme-btn" aria-label="Toggle light and dark mode">
+    <span class="sun">☀️</span><span class="moon">🌙</span>
+  </button>
+</nav>
+
+<header id="home" class="hero">
+  <p class="eyebrow">Hi, I’m</p>
+  <h1>Khushi Ghosh</h1>
+  <p class="role">Full Stack &amp; Backend Developer · <span class="grad">AI Builder</span></p>
+  <p class="tagline">Final-year EEE student building practical apps with clean APIs, solid databases and local AI.</p>
+  <div class="cta">
+    <a class="btn primary" href="#projects">View Projects</a>
+    <a class="btn ghost" href="https://github.com/Khushighosh" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="btn ghost" href="#contact">Contact</a>
+  </div>
 </header>
 
-<section id="about">
+<main>
+<section id="about" class="reveal">
   <h2>About Me</h2>
-  <p>
-    I am a final-year student at Dayananda Sagar College of Engineering, Bangalore,
-    passionate about full-stack and backend development and AI-powered applications.
-    I enjoy building practical projects that combine clean APIs, solid database design,
-    and real-world use cases, such as tools that help students study smarter.
+  <p class="lead">
+    I’m a final-year B.E. student in Electrical and Electronics Engineering at Dayananda Sagar College of
+    Engineering, Bangalore, passionate about full-stack and backend development and AI-powered applications.
+    I enjoy building practical projects that combine clean APIs, solid database design and real-world use cases.
   </p>
+  <div class="stats">
+    <div><b>8.0</b><span>CGPA</span></div>
+    <div><b>2027</b><span>Graduating</span></div>
+    <div><b>7+</b><span>Projects</span></div>
+    <div><b>2</b><span>Hacktoberfest entries</span></div>
+  </div>
 </section>
 
-<section id="skills">
+<section id="skills" class="reveal">
   <h2>Technical Skills</h2>
-  <div class="skills">
-    <span>JavaScript</span>
-    <span>TypeScript</span>
-    <span>Java</span>
-    <span>Python</span>
-    <span>C++</span>
-    <span>SQL</span>
-    <span>Node.js</span>
-    <span>Express</span>
-    <span>React.js</span>
-    <span>PostgreSQL</span>
-    <span>MongoDB</span>
-    <span>REST APIs</span>
-    <span>JWT Authentication</span>
-    <span>Git & GitHub</span>
-    <span>Postman</span>
-    <span>DSA</span>
-    <span>LLM Integrations</span>
+  <div class="skill-groups">
+    <div><h3>Languages</h3><div class="chips"><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>Python</span><span>C++</span><span>SQL</span></div></div>
+    <div><h3>Backend</h3><div class="chips"><span>Node.js</span><span>Express</span><span>REST APIs</span><span>JWT Auth</span></div></div>
+    <div><h3>Frontend</h3><div class="chips"><span>React.js</span><span>HTML</span><span>CSS</span></div></div>
+    <div><h3>Databases</h3><div class="chips"><span>PostgreSQL</span><span>MongoDB</span><span>SQLite</span></div></div>
+    <div><h3>AI</h3><div class="chips"><span>LLM Integrations</span><span>Ollama</span><span>Embeddings</span><span>Chroma</span></div></div>
+    <div><h3>Tools &amp; Core</h3><div class="chips"><span>Git &amp; GitHub</span><span>Postman</span><span>DSA</span></div></div>
   </div>
 </section>
 
-<section id="projects">
+<section id="projects" class="reveal">
   <h2>Projects</h2>
-
-  <div class="project-card">
-    <h3>Study Buddy</h3>
-    <p>
-      Built an exam-prep assistant for a friend preparing for GATE. It answers
-      questions and generates quizzes from a student's own notes, running fully
-      on a local model.
-    </p>
-    <p class="tech"><b>Technologies:</b> Ollama, Local Embeddings, Chroma, SQLite</p>
-    <p><a href="https://github.com/Khushighosh/study-buddy" target="_blank">View on GitHub</a></p>
+  <div class="tabs" role="tablist" id="tabs">
+    <button class="tab active" data-filter="all" role="tab">All</button>
+    <button class="tab" data-filter="fullstack" role="tab">Full-Stack</button>
+    <button class="tab" data-filter="ai" role="tab">AI</button>
+    <button class="tab" data-filter="hardware" role="tab">Hardware</button>
   </div>
+  <div class="grid" id="projectGrid"></div>
+</section>
 
-  <div class="project-card">
-    <h3>Mini ERP + CRM Operations Portal</h3>
-    <p>
-      Developed a full-stack operations portal to manage customers, products and
-      inventory, and sales challans, with role-based authentication.
-    </p>
-    <p class="tech"><b>Technologies:</b> Node.js, TypeScript, Express, PostgreSQL, React</p>
-    <p><a href="https://github.com/Khushighosh/mini-erp-crm" target="_blank">View on GitHub</a></p>
-  </div>
-
-  <div class="project-card">
-    <h3>GEN-AI Backend</h3>
-    <p>
-      Built a backend service with JWT-based authentication, including a complete
-      register, login and logout flow with token blacklisting.
-    </p>
-    <p class="tech"><b>Technologies:</b> Node.js, Express, MongoDB, JWT</p>
-    <p><a href="https://github.com/Khushighosh/Gen-AI-project" target="_blank">View on GitHub</a></p>
-  </div>
-
-  <div class="project-card">
-    <h3>Employee Leave & Attendance Management System</h3>
-    <p>
-      Built a system for employee attendance tracking, leave requests,
-      approval workflow, authentication, and database management.
-    </p>
-    <p class="tech"><b>Technologies:</b> Java, Spring Boot, REST API</p>
-  </div>
-
-  <div class="project-card">
-    <h3>Personal Portfolio Website</h3>
-    <p>
-      Created and deployed a responsive portfolio website to showcase my
-      skills, projects, and contact details.
-    </p>
-    <p class="tech"><b>Technologies:</b> HTML, CSS, JavaScript, Git, GitHub Pages</p>
+<section id="achievements" class="reveal">
+  <h2>Achievements</h2>
+  <div class="timeline">
+    <div class="ach"><span class="dot"></span><h3>Hacktoberfest 2026: Open-Source AI Challenge</h3><p>Submitted entries for Week 1 (“Same Spot”) and Week 2 (“Order Ledger”), both built on local open-weight models.</p></div>
+    <div class="ach"><span class="dot"></span><h3>Agentic AI Foundations Associate</h3><p>Certification (exam code 1Z0-1157-26).</p></div>
+    <div class="ach"><span class="dot"></span><h3>48-Hour Full-Stack Case Study</h3><p>Designed and built the Mini ERP + CRM Operations Portal end to end within 48 hours.</p></div>
+    <div class="ach"><span class="dot"></span><h3>Hacktoberfest Weekend Challenge: Build for a Friend</h3><p>Built Study Buddy, an offline exam-prep assistant, for a friend preparing for GATE.</p></div>
+    <div class="ach"><span class="dot"></span><h3>Competitive Programming</h3><p>Active problem solver on <a href="https://leetcode.com/u/KhushiGhosh/" target="_blank" rel="noopener">LeetCode</a> and Codeforces.</p></div>
+    <div class="ach"><span class="dot"></span><h3>Academic Standing</h3><p>8.0 CGPA, B.E. EEE, Dayananda Sagar College of Engineering (2023–2027).</p></div>
   </div>
 </section>
 
-<section id="blog">
-  <h2>Blog & Learning</h2>
-
-  <div class="project-card">
-    <h3>My Learning Journey in Full-Stack Development</h3>
-    <p>
-      Exploring backend and frontend development with Node.js, Spring Boot,
-      React.js, PostgreSQL, REST APIs, and authentication flows.
-    </p>
-  </div>
-
-  <div class="project-card">
-    <h3>Building with Local AI</h3>
-    <p>
-      Learning how to build useful applications on open-source models, from
-      embeddings and retrieval to running LLMs locally with Ollama.
-    </p>
+<section id="blog" class="reveal">
+  <h2>Blog &amp; Learning</h2>
+  <div class="grid two">
+    <div class="card static"><h3>My Learning Journey in Full-Stack Development</h3><p>Exploring backend and frontend development with Node.js, React.js, PostgreSQL, REST APIs and authentication flows.</p></div>
+    <div class="card static"><h3>Building with Local AI</h3><p>Learning how to build useful applications on open-source models, from embeddings and retrieval to running LLMs locally with Ollama.</p></div>
   </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="reveal">
   <h2>Contact Me</h2>
-  <p>Email: khushighosh371@gmail.com</p>
-  <p>Location: Bangalore, Karnataka</p>
-  <p>
-    <a href="https://github.com/Khushighosh" target="_blank">GitHub</a> |
-    <a href="https://www.linkedin.com/in/khushi-ghosh-39b957294/" target="_blank">LinkedIn</a> |
-    <a href="https://leetcode.com/u/KhushiGhosh/" target="_blank">LeetCode</a>
-  </p>
+  <p class="lead">Open to software internships and PPO opportunities. Let’s talk.</p>
+  <div class="contact-links">
+    <a class="btn primary" href="mailto:khushighosh371@gmail.com">✉️ Email</a>
+    <a class="btn ghost" href="https://github.com/Khushighosh" target="_blank" rel="noopener">GitHub ↗</a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/khushi-ghosh-39b957294/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <a class="btn ghost" href="https://leetcode.com/u/KhushiGhosh/" target="_blank" rel="noopener">LeetCode ↗</a>
+  </div>
+  <p class="loc">📍 Bangalore, Karnataka</p>
 </section>
+</main>
 
-<footer>
-  <p>© 2026 Khushi Ghosh | Portfolio</p>
-</footer>
+<footer><p>© 2026 Khushi Ghosh | Portfolio</p></footer>
 
 <script src="script.js"></script>
 </body>
